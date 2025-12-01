@@ -4,21 +4,21 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
+  <!-- Correct proto paths based on your repository -->
   <ItemGroup>
-    <Protobuf Include="../../protos/demo.proto" GrpcServices="Server" />
     <Protobuf Include="../../protos/grpc/health/v1/health.proto" GrpcServices="Server" />
+    <Protobuf Include="../../protos/grpc/health/v1/demo.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.52.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.28.2" />
+    <PackageReference Include="Google.Protobuf" Version="3.28.2" />  
     <PackageReference Include="Grpc.Tools" Version="2.52.0" PrivateAssets="All" />
-
     <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
     <PackageReference Include="Npgsql" Version="7.0.6" />
 
+    <!-- Google Cloud packages (matching your updated repo) -->
     <PackageReference Include="Google.Cloud.Spanner.Data" Version="5.0.0" />
-    <PackageReference Include="Google.Cloud.AlloyDb.V1" Version="1.1.0" />
   </ItemGroup>
 
 </Project>

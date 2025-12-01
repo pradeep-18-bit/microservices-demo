@@ -2,8 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="protos\cart.proto" GrpcServices="Server" />
+    <Protobuf Include="protos\health.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.52.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.4" />
+    <PackageReference Include="Grpc.Tools" Version="2.52.0" PrivateAssets="All" />
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+    <PackageReference Include="Npgsql" Version="7.0.6" />
+    <PackageReference Include="Google.Cloud.Spanner.Data" Version="4.8.0" />
+    <PackageReference Include="Google.Cloud.AlloyDb.Data" Version="1.1.0" />
+  </ItemGroup>
 
 </Project>

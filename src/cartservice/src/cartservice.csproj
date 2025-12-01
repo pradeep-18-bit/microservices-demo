@@ -14,7 +14,6 @@
     <PackageReference Include="Grpc.Tools" Version="2.52.0" PrivateAssets="All" />
     <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
     <PackageReference Include="Npgsql" Version="7.0.6" />
-    <PackageReference Include="Google.Cloud.Spanner.Data" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
